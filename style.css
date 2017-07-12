@@ -1,0 +1,44 @@
+#container{
+	background-color: pink;
+	display: flex;
+	justify-content: space-between;
+}
+
+.article{
+	background-color: #49b6ad;
+	height: 70px;
+	width: 330px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#aside{
+	background-color: #f6546a;
+	height: 500px;
+	width: 250px;
+	align-self: flex-end;
+
+}
+.header{
+	height: 100px;
+	background-color: grey;
+}
+#footer{
+	background-color: #b31b1b;
+	height: 100px;
+}
+
+@media only screen and (max-width: 500px){
+	#container{
+		background-color: blue;
+		flex-direction: column;
+	}
+	#aside{
+		width: 100%;
+	}
+}
+@media only screen and (max-height: 600px){
+	
+		.article{
+			width: 100%
+		}
+}
